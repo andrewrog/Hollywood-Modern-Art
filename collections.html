@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>Collections</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/building.png">
+
+    <style>
+      body {
+        font-family: verdana, sans-serif;
+        margin: 0;
+        background-color: rgb(240, 240, 240);
+      }
+
+      header {
+        background: linear-gradient(30deg, rgb(135, 230, 238), rgb(129, 117, 221));
+        font-weight: 700;
+        font-size: 30px;
+        padding: 10px 10px;
+        color: rgb(58, 58, 58);
+        text-align: right;
+      }
+
+      .dropbtn {
+        background-color: rgb(46, 39, 245);
+        color: white;
+        border: none;
+        padding: 5px 5px;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color .3s;
+      }
+
+      .dropbtn:hover {
+        background-color: rgba(39, 94, 245, 0.6);
+      }
+
+      .dropdown {
+        text-align: right;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background: rgb(240, 240, 240);
+        z-index: 1;
+        border-radius: 2px;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+        font-size: 10px;
+      }
+
+      .dropdown-content a:hover {
+        background-color: rgb(210, 210, 210);
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      } 
+
+      .opener {
+        font-weight: 600;
+        font-size: 17px;
+        margin-left: 10px;
+      }
+
+      .gallery {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .picture {
+        width: 32vw;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+        gap: 10px;
+        transition: scale .5s;
+      }
+
+      footer {
+        background: linear-gradient(30deg, rgb(135, 230, 238), rgb(129, 117, 221));
+        color: rgb(58, 58, 58);
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        font-weight: 700;
+      }
+
+      .picture:hover{
+        scale: 1.025;
+        border: 1px solid black;
+      }
+
+      .img_description {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="dropdown">
+        <button class="dropbtn">More</button>
+        <div class="dropdown-content">
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
+
+      <p style="text-align: center;">Collections</p>
+    </header>
+
+    <p><span class="opener">Our Travelling Collection</span></p>
+
+    <div class="gallery">
+      <!-- Put the images in this div -->
+        <div class="container">
+          <img src="images/dave chihuly.png" alt="Artwork #1" class="picture">
+          <p class="img_description">Dave Chiluly work. Added December of 2023.</p>
+        </div>
+         <div class="container">
+          <img src="images/dave chihuly 2.png" alt="Artwork #1" class="picture">
+          <p class="img_description">Another Dave Chiluly work. Added December of 2023.</p>
+        </div>
+    </div>
+
+     <p><span class="opener">Our Modern "Unusual Art" Collection</span></p>
+
+    <div class="gallery">
+      <!-- Put more images in this div -->
+       <div class="container">
+          <img src="images/pencils.png" alt="Artwork #1" class="picture">
+          <p class="img_description">One of our Unusual Art Collections. Pencil tips in the shape of different landmarks. Added December of 2023.</p>
+        </div>  
+        <div class="container">
+          <img style="object-fit: fill;" src="images/person.jpg" alt="Artwork #1" class="picture">
+          <p class="img_description">Another one of our Unusual Art Collections. Added December of 2023.</p>
+        </div> 
+        <div class="container">
+          <img src="images/random.jpg" alt="Artwork #1" class="picture">
+          <p class="img_description">Another one of our Unusual Art Collections. An interesting layout and assortment of items. Added December of 2023. </p>
+        </div>
+    </div>
+
+    <footer>
+      &copy; Modern Art Museum of Hollywood | 2023
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>Collections</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/building.png">
+
+    <style>
+      body {
+        font-family: verdana, sans-serif;
+        margin: 0;
+        background-color: rgb(240, 240, 240);
+      }
+
+      header {
+        background: linear-gradient(30deg, rgb(135, 230, 238), rgb(129, 117, 221));
+        font-weight: 700;
+        font-size: 30px;
+        padding: 10px 10px;
+        color: rgb(58, 58, 58);
+        text-align: right;
+      }
+
+      .dropbtn {
+        background-color: rgb(46, 39, 245);
+        color: white;
+        border: none;
+        padding: 5px 5px;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color .3s;
+      }
+
+      .dropbtn:hover {
+        background-color: rgba(39, 94, 245, 0.6);
+      }
+
+      .dropdown {
+        text-align: right;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background: rgb(240, 240, 240);
+        z-index: 1;
+        border-radius: 2px;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+        font-size: 10px;
+      }
+
+      .dropdown-content a:hover {
+        background-color: rgb(210, 210, 210);
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      } 
+
+      .opener {
+        font-weight: 600;
+        font-size: 17px;
+        margin-left: 10px;
+      }
+
+      .main-section {
+        margin: 10px;
+        font-size: 16px;
+      }
+
+      .image-container {
+        text-align: center;
+        font-size: 13px;
+        color: gray;
+      }
+
+      .about-image {
+        width: 65vw;
+        height: auto;
+        border-image: linear-gradient(rgb(135, 230, 238), rgb(129, 117, 221)) 30;
+        border-width: 6px;
+        border-style: solid;
+        border-radius: 5px;
+      }
+
+      footer {
+        background: linear-gradient(30deg, rgb(135, 230, 238), rgb(129, 117, 221));
+        color: rgb(58, 58, 58);
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        font-weight: 700;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="dropdown">
+        <button class="dropbtn">More</button>
+        <div class="dropdown-content">
+          <a href="collections.html">Collections</a>
+        </div>
+      </div>
+
+      <p style="text-align: center;">About Us</p>
+    </header>
+    <div class="main-section">
+      <h3>About the Museum</h3>
+      <p>Founded in 2023 the Modern Art Museum of Hollywood is a must see attraction. The museum houses an extremely diverse
+      selection of modern art. We want to deliver the ultimate modern art viewing experience for our members, guests, and donors.</p>
+      <div class="image-container">
+        <img src="images/group photo.png" alt="The Founders" class="about-image">
+        <p>The Founding Members</p>
+      </div>
+      <p>Help us make this is a must stop destination for folks visiting the LA area for years to come!</p>
+    </div>
+
+    <footer>
+      &copy; Modern Art Museum of Hollywood | 2023
+    </footer>
+  </body>
+</html>
